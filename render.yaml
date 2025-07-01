@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: octra-wallet
+    env: static
+    buildCommand: "echo 'No build needed for static site'"
+    staticPublishPath: public

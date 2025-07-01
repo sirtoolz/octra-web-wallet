@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OCTRA Web Wallet</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 0 auto; padding: 20px; }
+    .section { background: #f5f5f5; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+    input, button { padding: 10px; margin: 5px 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>OCTRA Web Wallet</h1>
+  
+  <div class="section">
+    <h2>Create Wallet</h2>
+    <button id="createWallet">Generate New Wallet</button>
+    <div id="newWallet"></div>
+  </div>
+  
+  <div class="section">
+    <h2>Send Transaction</h2>
+    <input type="password" id="privateKey" placeholder="OCTRA B64 Private Key">
+    <input type="text" id="receiver" placeholder="Receiver Address">
+    <input type="number" id="amount" placeholder="Amount">
+    <button id="sendTx">Send OCTRA</button>
+    <div id="txStatus"></div>
+  </div>
+  
+  <div class="section">
+    <h2>Transaction History</h2>
+    <input type="text" id="address" placeholder="Your Address">
+    <button id="viewHistory">View History</button>
+    <div id="history"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
